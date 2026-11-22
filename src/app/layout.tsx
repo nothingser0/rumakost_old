@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Sistem Manajemen Kost Mandiri",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html className={poppins.variable} lang="id">
       <body>{children}</body>

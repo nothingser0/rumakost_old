@@ -9,6 +9,8 @@
     "build": "next build --webpack",
     "prestart": "npm run db:generate",
     "start": "next start",
+    "preprod": "npm run db:generate",
+    "prod": "next start",
     "lint": "eslint",
     "pretypecheck": "npm run db:generate",
     "typecheck": "tsc --noEmit",

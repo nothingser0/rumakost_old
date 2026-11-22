@@ -2796,7 +2796,7 @@ export default function ComponentsShowcasePage() {
 
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginLeft: "auto" }}>
                 <TicketStepTracker status={demoProgressStep} variant="mini" />
-                <Button size="xs" variant="secondary-outline">
+                <Button size="xs" variant="outline">
                   Buka Detail
                 </Button>
               </div>
@@ -3034,7 +3034,7 @@ export default function ComponentsShowcasePage() {
                 </span>
                 <Button
                   size="xs"
-                  variant="secondary-outline"
+                  variant="outline"
                   onClick={() => setDemoBudgetSet(!demoBudgetSet)}
                 >
                   {demoBudgetSet ? "Ubah ke: Pagu Belum Diatur (CR-2026-001)" : "Ubah ke: Pagu Diatur (Rp 5 Jt)"}

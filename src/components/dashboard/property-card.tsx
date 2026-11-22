@@ -93,9 +93,9 @@ export const PropertyHighlightCard = forwardRef<HTMLDivElement, PropertyHighligh
       }
     };
 
-    const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const handleClick = (e: React.MouseEvent<HTMLElement>) => {
       if (onClick) {
-        onClick(e);
+        onClick(e as unknown as React.MouseEvent<HTMLDivElement>);
       } else if (href && typeof window !== "undefined") {
         window.location.href = href;
       }
